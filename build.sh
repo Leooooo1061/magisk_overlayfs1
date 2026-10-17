@@ -11,7 +11,7 @@ rm -rf "$1"
 git clone "$2" "$1"
 }
 #      <DIRECTORY>                       <PLUG-IN LINK>
-plugin ./native/jni/libcxx               http://github.com/huskydg/libcxx || exit 1
+plugin ./native/jni/libcxx               http://https://github.com/Magisk-Modules-Alt-Repo/magisk_overlayfs || exit 1
 plugin ./native/jni/external/selinux     https://github.com/topjohnwu/selinux || exit 1
 plugin ./native/jni/external/pcre        https://android.googlesource.com/platform/external/pcre || exit 1
 
