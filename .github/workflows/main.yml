@@ -22,12 +22,7 @@ jobs:
       with:
         ndk-version: r23b
         add-to-path: true
-    - name: Build with script
-      env:
-          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
-      run: |
-          chmod +x build.sh
-          bash build.sh
+
       # ... preceding steps (checkout, NDK setup, etc.)
 
     - name: Configure Git Auth for Submodules
